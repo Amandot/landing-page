@@ -23,7 +23,7 @@ const TechShowcase = () => {
     {
       icon: Shield,
       title: 'Advanced Security',
-      description: 'Enterprise-grade security with blockchain-level protection'
+      description: 'Enterprise-grade security with enhanced blockchain-level protection.'
     },
     {
       icon: Zap,
