@@ -21,9 +21,9 @@ const Footer = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const services = [
-    { name: 'Custom Software Development', icon: Code },
-    { name: 'Cloud Modernization', icon: Cloud },
-    { name: 'Data Analytics & AI', icon: BarChart3 }
+    { name: 'Custom CRM & ERP Solutions', icon: Code },
+    { name: 'Web Development', icon: Cloud },
+    { name: 'Professional Video Editing', icon: BarChart3 }
   ]
 
   const quickLinks = [
@@ -79,12 +79,12 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="flex-1 px-6 py-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-teal focus:bg-white/20 transition-all duration-300"
+                className="flex-1 px-6 py-4 rounded-lg bg-royal-blue/50 border border-cyber-blue/30 text-cyber-glow placeholder-gray-400 focus:outline-none focus:border-cyber-blue focus:bg-royal-blue/70 transition-all duration-300 electric-border"
               />
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-teal hover:bg-teal/90 text-white px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 whitespace-nowrap"
+                className="bg-cyber-blue hover:bg-cyber-blue/90 text-royal-blue px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 whitespace-nowrap electric-border"
               >
                 Subscribe
                 <ArrowRight size={20} />
@@ -106,23 +106,23 @@ const Footer = () => {
           >
             <h3 className="text-2xl font-bold mb-6">Sammunat</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Accelerating digital growth for global enterprises through innovative IT solutions, 
-              cloud modernization, and data-driven insights.
+              We're a creative company that focuses on establishing long-term partnerships with customers. 
+              Crafting project-specific solutions with expertise.
             </p>
             
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-300">
-                <Mail size={18} className="text-teal" />
-                <span>hello@sammunat.com</span>
+                <Mail size={18} className="text-cyber-blue" />
+                <span>info@sammunat.com</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
-                <Phone size={18} className="text-teal" />
+                <Phone size={18} className="text-cyber-blue" />
                 <span>+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
-                <MapPin size={18} className="text-teal" />
-                <span>New York, NY, USA</span>
+                <MapPin size={18} className="text-cyber-blue" />
+                <span>United States</span>
               </div>
             </div>
           </motion.div>
@@ -139,9 +139,9 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href="#services" 
-                    className="flex items-center gap-3 text-gray-300 hover:text-teal transition-colors duration-300 group"
+                    className="flex items-center gap-3 text-gray-300 hover:text-cyber-blue transition-colors duration-300 group"
                   >
-                    <service.icon size={16} className="text-teal group-hover:scale-110 transition-transform duration-300" />
+                    <service.icon size={16} className="text-cyber-blue group-hover:scale-110 transition-transform duration-300" />
                     <span>{service.name}</span>
                   </a>
                 </li>
@@ -161,7 +161,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-gray-300 hover:text-teal transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-gray-300 hover:text-cyber-blue transition-colors duration-300 flex items-center gap-2 group"
                   >
                     <span>{link.name}</span>
                     <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -191,9 +191,9 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ x: 5 }}
-                  className={`flex items-center gap-3 text-gray-300 ${social.color} transition-all duration-300 group`}
+                  className={`flex items-center gap-3 text-gray-300 hover:text-cyber-blue transition-all duration-300 group`}
                 >
-                  <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-white/20 transition-colors duration-300">
+                  <div className="w-10 h-10 bg-cyber-blue/20 rounded-lg flex items-center justify-center group-hover:bg-cyber-blue/40 transition-colors duration-300 electric-border">
                     <social.icon size={20} />
                   </div>
                   <span className="font-medium">{social.name}</span>
@@ -217,13 +217,13 @@ const Footer = () => {
               © 2024 Sammunat LLC. All rights reserved.
             </div>
             <div className="flex gap-6 text-sm">
-              <a href="#privacy" className="text-gray-400 hover:text-teal transition-colors duration-300">
+              <a href="#privacy" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">
                 Privacy Policy
               </a>
-              <a href="#terms" className="text-gray-400 hover:text-teal transition-colors duration-300">
+              <a href="#terms" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">
                 Terms of Service
               </a>
-              <a href="#cookies" className="text-gray-400 hover:text-teal transition-colors duration-300">
+              <a href="#cookies" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">
                 Cookie Policy
               </a>
             </div>

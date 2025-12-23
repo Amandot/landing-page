@@ -1,0 +1,13 @@
+@echo off
+echo Cleaning Next.js cache and restarting...
+
+echo Removing .next directory...
+rmdir /s /q .next 2>nul
+
+echo Clearing npm cache...
+npm cache clean --force
+
+echo Starting development server...
+npm run dev
+
+pause

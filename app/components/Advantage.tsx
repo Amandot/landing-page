@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { MapPin, Clock, Zap, Shield, Users, Award } from 'lucide-react'
+import { Shield, Clock, Zap, Award, Users, HeadphonesIcon } from 'lucide-react'
 
 const Advantage = () => {
   const ref = useRef(null)
@@ -11,29 +11,29 @@ const Advantage = () => {
 
   const advantages = [
     {
-      icon: MapPin,
-      title: 'US-Based Expertise',
-      description: 'Local presence with deep understanding of American business culture and regulatory requirements.',
-      stats: '100% US-Based Team'
+      icon: HeadphonesIcon,
+      title: '24/7 Support',
+      description: 'We\'re always available to assist you with any queries or technical issues, ensuring seamless service and uninterrupted support.',
+      stats: '24/7 Available'
     },
     {
-      icon: Clock,
-      title: '24/7 Global Support',
-      description: 'Round-the-clock technical support and monitoring to ensure your systems run smoothly worldwide.',
-      stats: '99.9% Uptime SLA'
+      icon: Shield,
+      title: 'Secure Solutions',
+      description: 'We prioritize your security with encrypted transactions and secure development practices, ensuring safe and reliable solutions.',
+      stats: '100% Secure'
     },
     {
       icon: Zap,
-      title: 'Agile Methodology',
-      description: 'Rapid development cycles with continuous delivery to accelerate your time-to-market.',
-      stats: '50% Faster Delivery'
+      title: 'Innovation Hub',
+      description: 'We stay updated with the latest trends and technologies, ensuring cutting-edge solutions for your success.',
+      stats: 'Latest Tech'
     }
   ]
 
   const additionalBenefits = [
-    { icon: Shield, title: 'Enterprise Security', value: 'SOC 2 Compliant' },
-    { icon: Users, title: 'Expert Team', value: '50+ Specialists' },
-    { icon: Award, title: 'Industry Recognition', value: 'Top 1% Rated' }
+    { icon: Award, title: 'Professional Design', value: 'Stunning Visuals' },
+    { icon: Users, title: 'Expert Team', value: 'Dedicated Support' },
+    { icon: Clock, title: 'Progress Reports', value: 'Regular Updates' }
   ]
 
   const containerVariants = {
@@ -69,11 +69,11 @@ const Advantage = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-royal-blue mb-6">
-            The <span className="gradient-text">Sammunat</span> Advantage
+            Why Choose <span className="gradient-text">Sammunat</span>?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Why leading enterprises choose us as their trusted technology partner 
-            for digital transformation and growth.
+            We bring solutions to make life easier for our clients. 
+            Professional services with transparent communication and quality results.
           </p>
         </motion.div>
 
@@ -132,11 +132,11 @@ const Advantage = () => {
         >
           <div className="text-center mb-10">
             <h3 className="text-3xl font-bold text-white mb-4">
-              Why Industry Leaders Trust Us
+              Why Choose Sammunat?
             </h3>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Our commitment to excellence and innovation has earned us recognition 
-              as a premier technology partner.
+              We make your spending stress-free for you to have perfect control. 
+              Seamless, high-quality services without the hassle.
             </p>
           </div>
 
@@ -171,17 +171,17 @@ const Advantage = () => {
           className="text-center mt-16"
         >
           <h3 className="text-2xl font-bold text-royal-blue mb-4">
-            Ready to Experience the Sammunat Advantage?
+            Ready to Start Your Project?
           </h3>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Join hundreds of satisfied clients who have transformed their businesses with our expertise.
+            Join our satisfied clients who have transformed their businesses with our expertise.
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-teal hover:bg-teal/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg"
           >
-            Start Your Transformation
+            Get Started Today
           </motion.button>
         </motion.div>
       </div>

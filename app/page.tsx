@@ -10,18 +10,19 @@ import PageTransition from './components/PageTransition'
 import InteractiveBackground from './components/InteractiveBackground'
 import ScrollProgress from './components/ScrollProgress'
 import SmoothScroll from './components/SmoothScroll'
-import LoadingScreen from './components/LoadingScreen'
+import TechShowcase from './components/TechShowcase'
 
 export default function Home() {
   return (
     <PageTransition>
       <LoadingScreen />
-      <main className="min-h-screen bg-white relative">
+      <main className="min-h-screen bg-royal-blue relative cyber-grid">
         <InteractiveBackground />
         <ScrollProgress />
         <SmoothScroll />
         <Navbar />
         <Hero />
+        <TechShowcase />
         <Services />
         <Advantage />
         <SocialProof />
@@ -30,3 +31,4 @@ export default function Home() {
     </PageTransition>
   )
 }
+import LoadingScreen from './components/LoadingScreen'

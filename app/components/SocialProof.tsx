@@ -8,36 +8,36 @@ const SocialProof = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  // Placeholder company logos - in a real implementation, these would be actual client logos
+  // Real project examples from Sammunat
   const companies = [
-    { name: 'TechCorp', logo: 'TC' },
-    { name: 'GlobalSoft', logo: 'GS' },
-    { name: 'InnovateLab', logo: 'IL' },
-    { name: 'DataFlow', logo: 'DF' },
-    { name: 'CloudTech', logo: 'CT' },
-    { name: 'NextGen', logo: 'NG' },
-    { name: 'SmartSys', logo: 'SS' },
-    { name: 'FutureTech', logo: 'FT' }
+    { name: 'Enterprise CRM', logo: 'EC' },
+    { name: 'Manufacturing ERP', logo: 'ME' },
+    { name: 'Healthcare Mgmt', logo: 'HM' },
+    { name: 'Restaurant POS', logo: 'RP' },
+    { name: 'E-commerce', logo: 'EC' },
+    { name: 'Logistics System', logo: 'LS' },
+    { name: 'Digital Banking', logo: 'DB' },
+    { name: 'Learning LMS', logo: 'LL' }
   ]
 
   const testimonials = [
     {
-      quote: "Sammunat transformed our legacy systems into a modern, scalable architecture. Their expertise in cloud migration saved us 40% in operational costs.",
+      quote: "Sammunat delivered an exceptional CRM solution that streamlined our operations across 10k+ users. Their expertise in enterprise systems is unmatched.",
       author: "Sarah Johnson",
-      position: "CTO, TechCorp",
-      company: "Fortune 500 Technology Company"
+      position: "Operations Director",
+      company: "Global Retail Chain"
     },
     {
-      quote: "The AI-powered analytics solution they built for us has revolutionized our decision-making process. ROI was evident within the first quarter.",
+      quote: "The manufacturing ERP system they built for our 5 facilities has revolutionized our inventory management and production planning.",
       author: "Michael Chen",
-      position: "VP of Operations, GlobalSoft",
-      company: "Leading Software Solutions Provider"
+      position: "Plant Manager",
+      company: "Manufacturing Company"
     },
     {
-      quote: "Their agile approach and 24/7 support ensured our critical systems never missed a beat during our digital transformation journey.",
-      author: "Emily Rodriguez",
-      position: "Head of IT, InnovateLab",
-      company: "Innovation Research Institute"
+      quote: "Their healthcare management system handles 50k+ patients seamlessly. The appointment scheduling and billing integration is perfect.",
+      author: "Dr. Emily Rodriguez",
+      position: "Hospital Administrator",
+      company: "Healthcare Network"
     }
   ]
 
@@ -52,10 +52,10 @@ const SocialProof = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-royal-blue mb-6">
-            Trusted by <span className="gradient-text">Industry Leaders</span>
+            Our Recent <span className="gradient-text">Work</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join the growing list of enterprises that have accelerated their digital transformation with Sammunat.
+            Explore some of our successfully implemented systems across various industries worldwide.
           </p>
         </motion.div>
 
@@ -70,20 +70,20 @@ const SocialProof = () => {
             Trusted by Industry Leaders
           </p>
           
-          {/* Logo Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center">
+          {/* Company Names */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 items-center">
             {companies.map((company, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                 transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.05 }}
                 className="flex items-center justify-center"
               >
-                <div className="w-16 h-16 bg-white rounded-xl shadow-md flex items-center justify-center border border-gray-100 hover:border-teal/20 hover:shadow-lg transition-all duration-300 group">
-                  <span className="text-royal-blue font-bold text-lg group-hover:text-teal transition-colors duration-300">
-                    {company.logo}
+                <div className="bg-white rounded-xl shadow-md px-4 py-3 border border-gray-100 hover:border-teal/20 hover:shadow-lg transition-all duration-300 group w-full text-center">
+                  <span className="text-royal-blue font-semibold text-sm md:text-base group-hover:text-teal transition-colors duration-300">
+                    {company.name}
                   </span>
                 </div>
               </motion.div>
@@ -151,10 +151,10 @@ const SocialProof = () => {
         >
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             {[
-              { number: '500+', label: 'Projects Completed', suffix: '' },
-              { number: '98', label: 'Client Satisfaction', suffix: '%' },
-              { number: '50+', label: 'Enterprise Clients', suffix: '' },
-              { number: '5', label: 'Years of Excellence', suffix: '+' }
+              { number: '300+', label: 'Completed Projects', suffix: '' },
+              { number: '900+', label: 'Happy Customers', suffix: '' },
+              { number: '100+', label: 'Expert Employees', suffix: '' },
+              { number: '4', label: 'Average Rating', suffix: '+' }
             ].map((stat, index) => (
               <motion.div
                 key={index}

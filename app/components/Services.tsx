@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { Code, Server, BarChart3, ArrowRight } from 'lucide-react'
+import { Code, Video, Globe, ArrowRight } from 'lucide-react'
 
 const Services = () => {
   const ref = useRef(null)
@@ -12,24 +12,24 @@ const Services = () => {
   const services = [
     {
       icon: Code,
-      title: 'Custom Software Development',
-      description: 'Tailored software solutions built with cutting-edge technologies to meet your unique business requirements.',
-      features: ['Full-Stack Development', 'Mobile Applications', 'API Integration', 'Legacy Modernization'],
-      color: 'from-blue-500 to-blue-600'
+      title: 'Custom CRM & ERP Solutions',
+      description: 'Streamline your business with scalable, efficient, and fully customized CRM and ERP systems designed to match your exact needs.',
+      features: ['Customer Relationship Management', 'Enterprise Resource Planning', 'Business Process Automation', 'Real-time Analytics'],
+      color: 'from-cyber-blue to-cyber-blue-light'
     },
     {
-      icon: Server,
-      title: 'Cloud Modernization',
-      description: 'Seamlessly migrate and optimize your infrastructure for scalability, security, and cost-efficiency.',
-      features: ['AWS/Azure Migration', 'DevOps Implementation', 'Microservices Architecture', 'Container Orchestration'],
-      color: 'from-teal-500 to-teal-600'
+      icon: Globe,
+      title: 'Web Development',
+      description: 'Build powerful digital experiences with expert web development. Fast, secure, and user-friendly websites and applications.',
+      features: ['Responsive Web Design', 'E-commerce Solutions', 'SEO Optimization', 'Web Applications'],
+      color: 'from-cyber-purple to-cyber-purple-light'
     },
     {
-      icon: BarChart3,
-      title: 'Data Analytics & AI',
-      description: 'Transform your data into actionable insights with advanced analytics and AI-powered solutions.',
-      features: ['Business Intelligence', 'Machine Learning', 'Predictive Analytics', 'Data Visualization'],
-      color: 'from-purple-500 to-purple-600'
+      icon: Video,
+      title: 'Professional Video Editing',
+      description: 'Elevate your content with professional video editing services. Seamless transitions, dynamic effects, and polished storytelling.',
+      features: ['YouTube Video Editing', 'Social Media Content', 'Corporate Presentations', 'Cinematic Editing'],
+      color: 'from-cyber-blue-light to-cyber-purple'
     }
   ]
 
@@ -56,7 +56,7 @@ const Services = () => {
   }
 
   return (
-    <section id="services" className="py-20 bg-gray-50" ref={ref}>
+    <section id="services" className="py-20 bg-cyber-dark" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -65,12 +65,12 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-royal-blue mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-cyber-glow mb-6">
             Our <span className="gradient-text">Services</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive IT solutions designed to accelerate your digital transformation 
-            and drive sustainable business growth.
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            The services we offer are specifically designed to meet your needs. 
+            From custom business solutions to creative content production.
           </p>
         </motion.div>
 
@@ -86,7 +86,9 @@ const Services = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ y: -10, scale: 1.02 }}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 group"
+              // className="bg-royal-blue/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:shadow-cyber-blue/20 transition-all duration-300 border border-cyber-blue/20 group electric-border"
+              // className="bg-slate-950/40 backdrop-blur-md rounded-2xl p-8 shadow-lg ... border border-white/5 group transition-all duration-300"
+              className="bg-royal-blue/50 backdrop-blur-md rounded-2xl p-8 shadow-lg hover:shadow-cyber-blue/10 transition-all duration-500 border border-cyber-blue/10 group"
             >
               {/* Icon */}
               <div className={`w-16 h-16 rounded-xl bg-gradient-to-r ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
@@ -94,19 +96,19 @@ const Services = () => {
               </div>
 
               {/* Content */}
-              <h3 className="text-2xl font-bold text-royal-blue mb-4 group-hover:text-teal transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-cyber-glow mb-4 group-hover:text-cyber-blue transition-colors duration-300 holographic">
                 {service.title}
               </h3>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-300 mb-6 leading-relaxed">
                 {service.description}
               </p>
 
               {/* Features */}
               <ul className="space-y-2 mb-6">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-sm text-gray-500">
-                    <div className="w-1.5 h-1.5 bg-teal rounded-full mr-3"></div>
+                  <li key={featureIndex} className="flex items-center text-sm text-gray-400">
+                    <div className="w-1.5 h-1.5 bg-cyber-blue rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}
@@ -115,7 +117,7 @@ const Services = () => {
               {/* CTA */}
               <motion.button
                 whileHover={{ x: 5 }}
-                className="flex items-center text-teal font-semibold group-hover:text-teal-600 transition-colors duration-300"
+                className="flex items-center text-cyber-blue font-semibold group-hover:text-cyber-blue-light transition-colors duration-300"
               >
                 Learn More
                 <ArrowRight size={16} className="ml-2" />
@@ -134,7 +136,7 @@ const Services = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-royal-blue hover:bg-royal-blue/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg"
+            className="bg-cyber-blue hover:bg-cyber-blue/90 text-royal-blue px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg electric-border"
           >
             View All Services
           </motion.button>

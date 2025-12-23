@@ -31,7 +31,7 @@ function AnimatedPoints() {
     <Points ref={ref} positions={particlesPosition} stride={3} frustumCulled={false}>
       <PointMaterial
         transparent
-        color="#14b8a6"
+        color="#00d4ff"
         size={0.005}
         sizeAttenuation={true}
         depthWrite={false}

@@ -1,0 +1,21 @@
+{
+  "name": "Sammunat LLC - IT Services & Digital Growth Consultancy",
+  "short_name": "Sammunat",
+  "description": "End-to-end IT solutions, from AI integration to Cloud Scalability. Accelerating Digital Growth for Global Enterprises.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#14b8a6",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
