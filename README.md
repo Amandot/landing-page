@@ -243,5 +243,3 @@ This project is proprietary and confidential. All rights reserved by Sammunat LL
 - Phone: [Your Phone]
 
 ---
-
-Built with ❤️ by the Sammunat development team
